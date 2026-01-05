@@ -14,6 +14,6 @@ public class Prospect
     public string Email { get; set; } = string.Empty;
     public Guid ProgramId { get; set; } // Interés académico
     public string LastComment { get; set; } = string.Empty;
-    public DateTime? NextReminder { get; set; } // Tu función de recordatorio
+    public DateTime? NextReminder { get; set; } 
     public string Status { get; set; } = "Nuevo"; // Nuevo, Interesado, Inscrito
 }
