@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore; // <-- ESTO QUITA EL ROJO DE ToListAsync
+using Microsoft.EntityFrameworkCore; 
 using Infraestructure.Persistence;
-using Domain.Entities;               // <-- ESTO QUITA EL ROJO DE AcademicProgram
+using Domain.Entities;               
 
 namespace WebApi.Controllers;
 
@@ -19,7 +19,6 @@ public class ProgramsController : ControllerBase
     [HttpGet]
     public async Task<ActionResult<IEnumerable<AcademicProgram>>> GetPrograms()
     {
-        // Revisa que en MarketingDbContext.cs se llame "AcademicPrograms"
         return await _context.AcademicPrograms.ToListAsync();
     }
 
