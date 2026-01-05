@@ -26,7 +26,6 @@ public class ProspectsController : ControllerBase
         return Ok(reminders);
     }
 
-    // Sugerencia: Agrega este método para poder probar la creación de prospectos
     [HttpPost]
     public async Task<IActionResult> CreateProspect(Prospect prospect)
     {
